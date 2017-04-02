@@ -1,0 +1,12 @@
+.dub
+docs.json
+__dummy.html
+*.o
+*.obj
+
+vendor/libcooler/build
+vendor/libcooler/.ycm_extra_conf.py
+
+__pycache__
+*.pyc
+cpp_to_d_test
