@@ -2,27 +2,27 @@
 
 using namespace std;
 
-class Base
-{
-    public:
-        virtual void print3i(int a, int b, int c) = 0;
-};
+// class Base
+// {
+    // public:
+        // virtual void print3i(int a, int b, int c) = 0;
+// };
 
-class Derived : public Base
+class Derived// : public Base
 {
     public:
         int field;
         Derived(int field) : field(field) {}
-
-        void print3i(int a, int b, int c)
-        {
-            cout << "a = " << a << endl;
-            cout << "b = " << b << endl;
-            cout << "c = " << c << endl;
-        }
-
+		void print3i(int a, int b, int c);
         int mul(int factor);
 };
+
+void Derived::print3i(int a, int b, int c)
+{
+	cout << "a = " << a << endl;
+	cout << "b = " << b << endl;
+	cout << "c = " << c << endl;
+}
 
 int Derived::mul(int factor)
 {
